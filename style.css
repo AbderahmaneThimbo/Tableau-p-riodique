@@ -1,0 +1,36 @@
+body{
+    background-color: bisque;
+    font-size: medium;
+    margin: 100px;
+}
+a {
+    text-decoration: 0;
+}
+.periodic-table{
+    display: grid;
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 10px;
+    margin: auto;
+    max-width: 1200px;
+    justify-content: baseline;
+}
+.periodic-element{
+    padding: 4px;
+    position: relative;
+    z-index: 1;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+.periodic-element .periodic-element-inner {
+    background-color: black;
+    padding: 10px 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 20px);
+    transition: inherit;
+}
+.periodic-element .title{
+    font-size: 20px;
+    margin: 0.3em 0 0;
+    transition: 0.8s ease 600ms;
+}
